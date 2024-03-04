@@ -1,5 +1,6 @@
 package client;
 
+import java.sql.SQLOutput;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -14,7 +15,6 @@ public class LiftRideClient {
         // Initialize any necessary configurations
     }
 
-    // Method to start the client
     // Method to start the client
     public void start() {
         // Create a fixed thread pool with the specified number of threads
@@ -56,6 +56,7 @@ public class LiftRideClient {
             for (int i = 0; i < TOTAL_REQUESTS / threads; i++) {
                 // Generate a random lift ride event
                 LiftRideEvent event = generateRandomEvent();
+                //System.out.println(event);
 
                 // Send the event to the server
                 boolean success = sendEventToServer(event);
@@ -79,6 +80,7 @@ public class LiftRideClient {
             int seasonID = 2022;
             int dayID = 1;
             int time = (int) (Math.random() * 360) + 1;
+            System.out.println(skierID +","+ resortID+","+liftID+","+","+seasonID+","+dayID+","+time);
 
             return new LiftRideEvent(skierID, resortID, liftID, seasonID, dayID, time);
         }
@@ -86,6 +88,7 @@ public class LiftRideClient {
         // Method to send lift ride event to the server
         private boolean sendEventToServer(LiftRideEvent event) {
             // Implement HTTP POST request to send lift ride event to the server
+           // System.out.println("Server Request sent Sucessfully");
             // Return true if successful, false otherwise (simulate failures for testing)
             return true; // Placeholder, replace with actual implementation
         }
