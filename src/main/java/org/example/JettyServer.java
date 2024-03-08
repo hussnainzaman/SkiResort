@@ -24,7 +24,7 @@ public class JettyServer {
         int idleTimeout = 120;
 
         // Define server port
-        int port = 9090;
+        int port = 8080;
 
         // Create a QueuedThreadPool with defined settings
         QueuedThreadPool threadPool = new QueuedThreadPool(maxThreads, minThreads, idleTimeout);
@@ -38,7 +38,7 @@ public class JettyServer {
         server.setConnectors(new Connector[]{connector});
 
         // Define context path for the web application
-        String contextPath = "/coen6317";
+        String contextPath = "/dss";
 
         // Find the base resource for the web application
         URI webResourceBase = findWebResourceBase(server.getClass().getClassLoader());
