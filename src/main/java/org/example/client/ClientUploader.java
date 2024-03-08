@@ -26,8 +26,8 @@ import com.google.gson.Gson;
 public class ClientUploader {
 
     private static int NUM_THREADS = 32;
-    private static  int MAX_POSTS_PER_THREAD = 1000;
-    private static int MAX_REQUESTS = 10000;
+    private static  int MAX_POSTS_PER_THREAD = 100;
+    private static int MAX_REQUESTS = 1000;
     private static  int TOTAL_POSTS = NUM_THREADS * MAX_POSTS_PER_THREAD;
     private final HttpClient client;
     private final String endpoint;
@@ -150,14 +150,12 @@ public class ClientUploader {
             while (numSentRequests.get() < MAX_REQUESTS - (NUM_THREADS - 1) && numFailPosts < MAX_POSTS_PER_THREAD) {
                 LiftRide liftRide = null;
                 synchronized (liftRides) {
-                    if(!liftRides.isEmpty()) {
+                    if (!liftRides.isEmpty()) {
                         liftRide = liftRides.remove(0);
                     }
                 }
 
-
                 if (liftRide != null) {
-
                     String json = gson.toJson(liftRide);
                     System.out.println(json);
                     long sTime = System.currentTimeMillis();
@@ -173,7 +171,6 @@ public class ClientUploader {
                         if (response.statusCode() == 201) {
                             long responseTime = eTime - sTime;
                             responseTimes.add(responseTime);
-
                             numSuccessfulRequests++;
                         } else {
                             numUnSuccessfulRequests++;
@@ -186,6 +183,7 @@ public class ClientUploader {
                     numSentRequests.incrementAndGet();
                 }
             }
+
             latch.countDown();
         }
     }

@@ -12,6 +12,8 @@ import com.google.gson.Gson;
 
 public class JavaClient {
     private final static Random ran = new Random();
+    //public ExecutorService executor;
+
     public static void main(String[] args) {
         String endpoint = "http://localhost:8080/dss/skiers/1/seasons/2022/days/7/skiers/1234";
         // Create a thread pool and start multiple instances of the client
