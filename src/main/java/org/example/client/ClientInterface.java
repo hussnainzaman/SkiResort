@@ -7,7 +7,7 @@ import java.net.http.HttpResponse;
 
 public class ClientInterface implements Runnable {
 
-    private final HttpClient client;
+    public final HttpClient client;
     private final String data;
     private final String endpoint;
 
