@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.3.1&#10;Maven Dependencies Update">
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.3.2&#10;Maven Dependencies Update">
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,7 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -62,12 +66,29 @@
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
     "last_opened_file_path": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java/schema",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\hussn\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="535bcd17-8bfa-472f-a1dd-781c43b87d4d" />
+        <option name="reportName" value="SkiResort/qodana/2024-03-08" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\hussn\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="535bcd17-8bfa-472f-a1dd-781c43b87d4d" reportId="SkiResort/qodana/2024-03-08" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hussn\IdeaProjects\SkiResort\src\main\java\schema" />
@@ -248,7 +269,31 @@
       <option name="project" value="LOCAL" />
       <updated>1709872502309</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="V 0.3.2&#10;Maven Dependencies Update">
+      <option name="closed" value="true" />
+      <created>1709872989386</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709872989386</updated>
+    </task>
+    <task id="LOCAL-00012" summary="V 0.3.2&#10;Maven Dependencies Update">
+      <option name="closed" value="true" />
+      <created>1709873003035</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709873003035</updated>
+    </task>
+    <task id="LOCAL-00013" summary="V 0.3.2&#10;Maven Dependencies Update">
+      <option name="closed" value="true" />
+      <created>1709873014781</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709873014781</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,6 +304,7 @@
     <MESSAGE value="V 0.2" />
     <MESSAGE value="V 0.3&#10;Running Test and check.html page for checking if server is running or not" />
     <MESSAGE value="V 0.3.1&#10;Maven Dependencies Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 0.3.1&#10;Maven Dependencies Update" />
+    <MESSAGE value="V 0.3.2&#10;Maven Dependencies Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 0.3.2&#10;Maven Dependencies Update" />
   </component>
 </project>
