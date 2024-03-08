@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="!st">
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="2nd">
+      <change afterPath="$PROJECT_DIR$/src/main/java/java/JettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/schema/LiftRide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/schema/SkierData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/schema/SkierLiftRideEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/LiftRideClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/LiftRideClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2dChP5CjJK6XF2oct8HnFQsnXfS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,12 +45,17 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
+    "last_opened_file_path": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java/schema",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hussn\IdeaProjects\SkiResort\src\main\java\schema" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hussn\IdeaProjects\SkiResort\src\main\java" />
     </key>
@@ -95,11 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1709520770757</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2nd">
+      <option name="closed" value="true" />
+      <created>1709525396697</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709525396697</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="!st" />
-    <option name="LAST_COMMIT_MESSAGE" value="!st" />
+    <MESSAGE value="2nd" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd" />
   </component>
 </project>

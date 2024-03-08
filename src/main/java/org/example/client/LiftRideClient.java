@@ -1,6 +1,5 @@
-package client;
+package org.example.client;
 
-import java.sql.SQLOutput;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
