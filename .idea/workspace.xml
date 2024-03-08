@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.3.2&#10;Maven Dependencies Update">
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.3.7&#10;Maven Dependencies Update server update error resolved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
@@ -30,7 +29,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -48,6 +47,7 @@
     "Application.JettyServer.executor": "Run",
     "Application.Main.executor": "Run",
     "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.All in SkiResort.executor": "Run",
     "JUnit.ClientInterfaceTest.executor": "Run",
     "JUnit.ClientUploaderTest.executor": "Run",
     "JUnit.ClientUploaderTest.testRun.executor": "Run",
@@ -66,7 +66,7 @@
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
     "last_opened_file_path": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java/schema",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -75,8 +75,8 @@
   <component name="QodanaHighlightedReportService">
     <option name="localRunNotPublishedPersistedInfo">
       <LocalReportPersistedInfo>
-        <option name="path" value="C:\Users\hussn\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
-        <option name="reportGuid" value="535bcd17-8bfa-472f-a1dd-781c43b87d4d" />
+        <option name="path" value="C:\Users\hussn\AppData\Local\Temp\qodana_output1\qodana.sarif.json" />
+        <option name="reportGuid" value="847b6601-cf6b-4e64-acf4-855b159a6e98" />
         <option name="reportName" value="SkiResort/qodana/2024-03-08" />
       </LocalReportPersistedInfo>
     </option>
@@ -86,6 +86,7 @@
   </component>
   <component name="QodanaReportsService">
     <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\hussn\AppData\Local\Temp\qodana_output1\qodana.sarif.json" reportGuid="847b6601-cf6b-4e64-acf4-855b159a6e98" reportId="SkiResort/qodana/2024-03-08" />
       <ReportDescription localRun="true" path="C:\Users\hussn\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="535bcd17-8bfa-472f-a1dd-781c43b87d4d" reportId="SkiResort/qodana/2024-03-08" />
     </option>
   </component>
@@ -131,18 +132,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainServletTest.testDoPostWithValidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in SkiResort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SkiResort" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.MainServletTest" />
-      <option name="METHOD_NAME" value="testDoPostWithValidInput" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,10 +159,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JettyServer" />
+        <item itemvalue="JUnit.All in SkiResort" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
         <item itemvalue="Application.JavaClient" />
         <item itemvalue="JUnit.test in SkiResort" />
-        <item itemvalue="JUnit.MainServletTest.testDoPostWithValidInput" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709873014781</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="V 0.3.7&#10;Maven Dependencies Update server update error resolved">
+      <option name="closed" value="true" />
+      <created>1709927566551</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709927566551</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -305,6 +306,7 @@
     <MESSAGE value="V 0.3&#10;Running Test and check.html page for checking if server is running or not" />
     <MESSAGE value="V 0.3.1&#10;Maven Dependencies Update" />
     <MESSAGE value="V 0.3.2&#10;Maven Dependencies Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 0.3.2&#10;Maven Dependencies Update" />
+    <MESSAGE value="V 0.3.7&#10;Maven Dependencies Update server update error resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 0.3.7&#10;Maven Dependencies Update server update error resolved" />
   </component>
 </project>
