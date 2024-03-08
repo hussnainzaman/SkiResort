@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/ClientInterfaceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/ClientUploaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" afterDir="false" />
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 0.2">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/check.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/LiftRideTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/SkierDataTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/org/example/test/SkierLiftRideEventTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/org/example/test/ClientInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org/example/test/ClientInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/org/example/test/ClientUploaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org/example/test/ClientUploaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -45,7 +51,9 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.JavaClient.executor": "Run",
+    "Application.JettyServer.executor": "Run",
     "Application.Main.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.ClientInterfaceTest.executor": "Run",
     "JUnit.ClientUploaderTest.executor": "Run",
     "JUnit.ClientUploaderTest.testRun.executor": "Run",
@@ -54,6 +62,7 @@
     "JUnit.MainServletTest.executor": "Run",
     "JUnit.MainServletTest.testDoPostWithInvalidInput.executor": "Run",
     "JUnit.MainServletTest.testDoPostWithValidInput.executor": "Run",
+    "JUnit.test in SkiResort.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,65 +85,36 @@
       <recent name="C:\Users\hussn\IdeaProjects\SkiResort\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainServletTest">
-    <configuration name="JavaClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.JettyServer">
+    <configuration name="JavaClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.client.JavaClient" />
       <module name="SkiResort" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JavaClientTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JavaClientTest.testJavaClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JettyServer" />
       <module name="SkiResort" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JavaClientTest" />
-      <option name="METHOD_NAME" value="testJavaClient" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainServletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SkiResort" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.MainServletTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainServletTest.testDoPostWithInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SkiResort" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.MainServletTest" />
-      <option name="METHOD_NAME" value="testDoPostWithInvalidInput" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,13 +135,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test in SkiResort (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SkiResort" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in SkiResort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SkiResort" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/org/example/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainServletTest" />
-        <item itemvalue="JUnit.MainServletTest.testDoPostWithInvalidInput" />
+        <item itemvalue="Application.JettyServer" />
+        <item itemvalue="JUnit.test in SkiResort (1)" />
+        <item itemvalue="Application.JavaClient" />
+        <item itemvalue="JUnit.test in SkiResort" />
         <item itemvalue="JUnit.MainServletTest.testDoPostWithValidInput" />
-        <item itemvalue="JUnit.JavaClientTest" />
-        <item itemvalue="JUnit.JavaClientTest.testJavaClient" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +209,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709865239125</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="V 0.2">
+      <option name="closed" value="true" />
+      <created>1709868983034</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709868983034</updated>
+    </task>
+    <task id="LOCAL-00006" summary="V 0.2">
+      <option name="closed" value="true" />
+      <created>1709869000079</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709869000079</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -221,6 +233,7 @@
     <MESSAGE value="2nd" />
     <MESSAGE value="ON IT" />
     <MESSAGE value="V 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 0.1" />
+    <MESSAGE value="V 0.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 0.2" />
   </component>
 </project>

@@ -3,8 +3,6 @@ package org.example.test;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-
 import org.example.schema.LiftRide;
 import org.example.servlet.MainServlet;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,9 +11,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
 import java.io.*;
-import java.util.stream.Collectors;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 class MainServletTest {
 

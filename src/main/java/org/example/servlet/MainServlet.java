@@ -1,23 +1,20 @@
 package org.example.servlet;
 
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.example.schema.LiftRide;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
-
-import org.example.schema.LiftRide;
-
-import com.google.gson.Gson;
 
 @WebServlet(name = "skiers", value = "skiers/*")
 public class MainServlet extends HttpServlet {

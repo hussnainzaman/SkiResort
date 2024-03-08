@@ -1,5 +1,8 @@
 package org.example.client;
 
+import com.google.gson.Gson;
+import org.example.schema.LiftRide;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -14,14 +17,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import org.example.schema.LiftRide;
-
-import com.google.gson.Gson;
 
 public class ClientUploader {
 

@@ -1,14 +1,12 @@
 package org.example.client;
 
+import com.google.gson.Gson;
+import org.example.schema.LiftRide;
+
 import java.util.Random;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
-import org.example.schema.LiftRide;
-
-import com.google.gson.Gson;
 
 public class JavaClient {
     private final static Random ran = new Random();

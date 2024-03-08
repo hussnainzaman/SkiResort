@@ -2,7 +2,6 @@ package org.example.test;
 
 import org.example.client.ClientInterface;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
