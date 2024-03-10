@@ -41,15 +41,18 @@ public class MainServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
             IOException {
+
         int resortID = Integer.parseInt(request.getPathInfo().split("/")[1]);
         String seasonID = request.getPathInfo().split("/")[3];
         String dayID = request.getPathInfo().split("/")[5];
         String skierID = request.getPathInfo().split("/")[7];
         int ID = Integer.parseInt(skierID);
         int day = Integer.parseInt(dayID);
+
         if (resortID < 1 || resortID > 10 ||
                 !seasonID.equals("2022")  || seasonID.isEmpty() || day < 1 || day > 7 || dayID == null ||
-                ID < 1 || ID > 100000) {
+                ID < 1 || ID > 100000)
+        {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             PrintWriter out = response.getWriter();
             out.println("Invalid parameters");
@@ -65,6 +68,7 @@ public class MainServlet extends HttpServlet {
         // Validate the input
         int liftID = liftRide.getLiftID();
         int time = liftRide.getTime();
+
         if (liftID < 1 || liftID > 40 || time < 1 || time > 360) {
             JsonObject errorResponse = new JsonObject();
             errorResponse.addProperty("message", "Invalid input: liftID should be in range [1,40] "
@@ -86,11 +90,30 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Get the path info
+        String pathInfo = request.getPathInfo();
+        if (pathInfo == null) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            PrintWriter out = response.getWriter();
+            out.println("Invalid parameters");
+            out.close();
+            return;
+        }
+
         // Parse the request parameters
-        int resortID = Integer.parseInt(request.getPathInfo().split("/")[1]);
-        String seasonID = request.getPathInfo().split("/")[3];
-        String dayID = request.getPathInfo().split("/")[5];
-        String skierID = request.getPathInfo().split("/")[7];
+        String[] pathParts = pathInfo.split("/");
+        if (pathParts.length < 8) {
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            PrintWriter out = response.getWriter();
+            out.println("Invalid parameters");
+            out.close();
+            return;
+        }
+
+        int resortID = Integer.parseInt(pathParts[1]);
+        String seasonID = pathParts[3];
+        String dayID = pathParts[5];
+        String skierID = pathParts[7];
         int skierIDInt = Integer.parseInt(skierID);
         int day = Integer.parseInt(dayID);
 
@@ -118,7 +141,8 @@ public class MainServlet extends HttpServlet {
         response.setStatus(HttpServletResponse.SC_OK);
         response.setContentType("application/json");
         PrintWriter out = response.getWriter();
-        out.print(responseJson);
+        out.print(responseJson+"OK");
         out.flush();
-    }
+
+}
 }

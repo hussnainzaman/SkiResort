@@ -23,8 +23,8 @@ import java.util.logging.Logger;
 public class ClientUploader {
 
     private static int NUM_THREADS = 32;
-    private static  int MAX_POSTS_PER_THREAD = 100;
-    private static int MAX_REQUESTS = 1000;
+    private static  int MAX_POSTS_PER_THREAD = 1000;
+    private static int MAX_REQUESTS = 10000;
     private static  int TOTAL_POSTS = NUM_THREADS * MAX_POSTS_PER_THREAD;
     private final HttpClient client;
     private final String endpoint;
@@ -32,15 +32,8 @@ public class ClientUploader {
     private final Random ran;
     private final Gson gson;
 
-
     private AtomicInteger numSentRequests = new AtomicInteger(0);
-
-
-
-
     private AtomicInteger numRequestsSent;
-
-
     private int numUnSuccessfulRequests;
     private int numSuccessfulRequests;
     private long startTime = 0;
@@ -196,7 +189,7 @@ public class ClientUploader {
         int dayId = ran.nextInt(7) + 1;
         String dId = Integer.toString(dayId);
 
-        String url = "http://localhost:9090/coen6317/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
+        String url = "http://localhost:8080/dss/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
         ClientUploader uploader = new ClientUploader(url);
         try {
             uploader.run();

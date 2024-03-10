@@ -15,7 +15,7 @@ public class JavaClient {
     public static void main(String[] args) {
         String endpoint = "http://localhost:8080/dss/skiers/1/seasons/2022/days/7/skiers/1234";
         // Create a thread pool and start multiple instances of the client
-        int numClients = 100;
+        int numClients = 32;
         ExecutorService executor = Executors.newFixedThreadPool(numClients);
         for (int i = 0; i < numClients; i++) {
             int liftId = ran.nextInt(40) + 1;
