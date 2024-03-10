@@ -8,14 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 1.0.0">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 1.1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/check.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
@@ -129,7 +127,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClientUploader">
+  <component name="RunManager" selected="Application.JavaClient">
     <configuration name="ClientUploader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.client.ClientUploader" />
       <module name="SkiResort" />
@@ -187,9 +185,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientUploader" />
-        <item itemvalue="Application.JettyServer" />
         <item itemvalue="Application.JavaClient" />
+        <item itemvalue="Application.JettyServer" />
+        <item itemvalue="Application.ClientUploader" />
         <item itemvalue="JUnit.All in SkiResort" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
       </list>
@@ -347,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709931235914</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="V 1.1.0">
+      <option name="closed" value="true" />
+      <created>1710049475955</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1710049475955</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -362,7 +368,8 @@
     <MESSAGE value="V 0.3.7&#10;Maven Dependencies Update server update error resolved" />
     <MESSAGE value="V 0.3.8&#10;Maven Dependencies Update server update error resolved" />
     <MESSAGE value="V 1.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.0.0" />
+    <MESSAGE value="V 1.1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 1.1.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -40,6 +40,7 @@ public class JettyServer {
         context.setBaseResource(Resource.newResource(webResourceBase));
         context.setContextPath(contextPath);
         context.setParentLoaderPriority(true); // Use the parent class loader
+        // Add new SkiServlet
         context.addServlet(MainServlet.class, "/skiers/*");
 
         // Set the handler for the server

@@ -189,6 +189,7 @@ public class ClientUploader {
         int dayId = ran.nextInt(7) + 1;
         String dId = Integer.toString(dayId);
 
+        //String url = "http://68.233.127.218:8080/dss/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
         String url = "http://localhost:8080/dss/skiers/" + rId + "/seasons/" + season + "/days/" + dId + "/skiers/" + sId;
         ClientUploader uploader = new ClientUploader(url);
         try {
