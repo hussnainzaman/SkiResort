@@ -28,9 +28,10 @@ public class JettyServer {
 
         // Create the Jetty server instance
         Server server = new Server(threadPool);
-        ServerConnector connector = new ServerConnector(server);
-        connector.setPort(port);
-        server.setConnectors(new Connector[]{connector});
+        try (ServerConnector connector = new ServerConnector(server)) {
+            connector.setPort(port);
+            server.setConnectors(new Connector[]{connector});
+        }
 
         // Create a WebAppContext to define the web application
         String contextPath = "/dss"; // Context path for the web application

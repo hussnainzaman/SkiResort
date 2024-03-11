@@ -118,10 +118,10 @@ public class MainServlet extends HttpServlet {
         int day = Integer.parseInt(dayID);
 
         // Validate the parameters
-        if (resortID < 1 || resortID > 10 ||
+        if ((resortID < 1) || (resortID > 10) ||
                 !seasonID.equals("2022") || seasonID.isEmpty() ||
-                day < 1 || day > 7 || dayID == null ||
-                skierIDInt < 1 || skierIDInt > 100000) {
+                (day < 1) || (day > 7) || (dayID == null) ||
+                (skierIDInt < 1) || (skierIDInt > 100000)) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             PrintWriter out = response.getWriter();
             out.println("Invalid parameters");
