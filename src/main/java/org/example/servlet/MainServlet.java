@@ -86,6 +86,7 @@ public class MainServlet extends HttpServlet {
         response.setStatus(HttpServletResponse.SC_CREATED);
         PrintWriter out = response.getWriter();
         out.println("Status OK! Event has been Created");
+
     }
 
     @Override

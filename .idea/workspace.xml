@@ -11,6 +11,7 @@
     <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 2.0.0&#10;Final Version for Project Phase 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +34,11 @@
     <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -88,7 +94,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Ski__V__2.0.0",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
     "last_opened_file_path": "D:/Semester 2/COEN 6731 Distributed Software Systems/distributed system rmi multithreading-20240207",
@@ -98,6 +104,10 @@
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
+  <component name="QodanaCIConfigService">
+    <option name="ciType" value="GITHUB" />
+    <option name="path" value="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\hussn\IdeaProjects\SkiResort\src\main\java\schema" />
@@ -189,8 +199,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.JavaClient" />
-        <item itemvalue="Application.ClientUploader" />
         <item itemvalue="Application.JettyServer" />
+        <item itemvalue="Application.ClientUploader" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
         <item itemvalue="JUnit.All in SkiResort" />
       </list>

@@ -30,8 +30,10 @@ public class JavaClient {
 
             long endTime = System.currentTimeMillis();
             long elapsedTime = endTime - startTime;
-            System.out.println("Client " + i + " = LiftID= " + liftId + " in " + time);
-            System.out.println("Elapsed Request time: " + elapsedTime + " milliseconds");
+            System.out.println("Client " + i + ",LiftID= " + liftId + ",ride in " + time+ "Sec");
+            System.out.println("Start Time(UMT Standard): " + startTime);
+            System.out.println("Request Latency: " + elapsedTime + " milliseconds");
+
 
         }
 
