@@ -9,9 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 2.0.1&#10;Final Version for Project Phase 1">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +34,11 @@
     <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Ski_V_2.0.0" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -56,50 +60,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.ClientUploader.executor": "Run",
-    "Application.JavaClient.executor": "Run",
-    "Application.JettyServer.executor": "Run",
-    "Application.Main.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.All in SkiResort.executor": "Run",
-    "JUnit.ClientInterfaceTest.executor": "Run",
-    "JUnit.ClientUploaderTest.executor": "Run",
-    "JUnit.ClientUploaderTest.testRun.executor": "Run",
-    "JUnit.JavaClientTest.executor": "Run",
-    "JUnit.JavaClientTest.testJavaClient.executor": "Run",
-    "JUnit.MainServletTest.executor": "Run",
-    "JUnit.MainServletTest.testDoPostWithInvalidInput.executor": "Run",
-    "JUnit.MainServletTest.testDoPostWithValidInput.executor": "Run",
-    "JUnit.test in SkiResort (1).executor": "Run",
-    "JUnit.test in SkiResort.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.SkiResort [clean,install,-f].executor": "Run",
-    "Maven.SkiResort [clean,install,-force].executor": "Run",
-    "Maven.SkiResort [clean,install].executor": "Run",
-    "Maven.SkiResort [clean].executor": "Run",
-    "Maven.SkiResort [compile].executor": "Run",
-    "Maven.SkiResort [deploy].executor": "Run",
-    "Maven.SkiResort [install].executor": "Run",
-    "Maven.SkiResort [package].executor": "Run",
-    "Maven.SkiResort [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
-    "last_opened_file_path": "D:/Semester 2/COEN 6731 Distributed Software Systems/distributed system rmi multithreading-20240207",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ClientUploader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JettyServer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.All in SkiResort.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientInterfaceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientUploaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClientUploaderTest.testRun.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JavaClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JavaClientTest.testJavaClient.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainServletTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainServletTest.testDoPostWithInvalidInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainServletTest.testDoPostWithValidInput.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test in SkiResort (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.test in SkiResort.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [clean,install,-f].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [clean,install,-force].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SkiResort [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/hussn/IdeaProjects/SkiResort/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Semester 2/COEN 6731 Distributed Software Systems/distributed system rmi multithreading-20240207&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="QodanaCIConfigService">
     <option name="ciType" value="GITHUB" />
     <option name="path" value="$PROJECT_DIR$/.github/workflows/qodana_code_quality.yml" />
@@ -200,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ClientUploader" />
-        <item itemvalue="Application.JavaClient" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
         <item itemvalue="JUnit.All in SkiResort" />
         <item itemvalue="Application.JettyServer" />
+        <item itemvalue="Application.JavaClient" />
+        <item itemvalue="Application.ClientUploader" />
       </list>
     </recent_temporary>
   </component>
