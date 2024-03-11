@@ -30,8 +30,8 @@ public class JavaClient {
 
             long endTime = System.currentTimeMillis();
             long elapsedTime = endTime - startTime;
-            System.out.println("Client " + i + " = " + liftId + " in " + time);
-            System.out.println("Elapsed time: " + elapsedTime + " milliseconds");
+            System.out.println("Client " + i + " = LiftID= " + liftId + " in " + time);
+            System.out.println("Elapsed Request time: " + elapsedTime + " milliseconds");
 
         }
 

@@ -8,12 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 1.1.1&#10;Working Server">
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 2.0.0&#10;Final Version for Project Phase 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClientUploader">
+  <component name="RunManager" selected="Application.JavaClient">
     <configuration name="ClientUploader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.client.ClientUploader" />
       <module name="SkiResort" />
@@ -191,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaClient" />
         <item itemvalue="Application.ClientUploader" />
         <item itemvalue="Application.JettyServer" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
         <item itemvalue="JUnit.All in SkiResort" />
-        <item itemvalue="Application.JavaClient" />
       </list>
     </recent_temporary>
   </component>
@@ -368,7 +365,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710052787270</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="V 2.0.0&#10;Final Version for Project Phase 1">
+      <option name="closed" value="true" />
+      <created>1710116726163</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1710116726163</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -385,7 +390,8 @@
     <MESSAGE value="V 1.0.0" />
     <MESSAGE value="V 1.1.0" />
     <MESSAGE value="V 1.1.1&#10;Working Server" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.1.1&#10;Working Server" />
+    <MESSAGE value="V 2.0.0&#10;Final Version for Project Phase 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 2.0.0&#10;Final Version for Project Phase 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
