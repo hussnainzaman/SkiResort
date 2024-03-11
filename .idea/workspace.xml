@@ -8,14 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 1.1.0">
+    <list default="true" id="1985b727-db3e-4d90-8259-8ad440f87fd1" name="Changes" comment="V 1.1.1&#10;Working Server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JettyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/ClientUploader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/client/JavaClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/org/example/test/MainServletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +31,9 @@
         <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,6 +77,8 @@
     "JUnit.test in SkiResort (1).executor": "Run",
     "JUnit.test in SkiResort.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.SkiResort [clean,install,-f].executor": "Run",
+    "Maven.SkiResort [clean,install,-force].executor": "Run",
     "Maven.SkiResort [clean,install].executor": "Run",
     "Maven.SkiResort [clean].executor": "Run",
     "Maven.SkiResort [compile].executor": "Run",
@@ -92,7 +95,7 @@
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/hussn/IdeaProjects/SkiResort/src/main/java",
     "last_opened_file_path": "D:/Semester 2/COEN 6731 Distributed Software Systems/distributed system rmi multithreading-20240207",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings"
@@ -117,17 +120,20 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean install -f" />
+      <command value="mvn clean install -force" />
       <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
+        <option value="JUnit" />
         <option value="MavenRunConfiguration" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JavaClient">
+  <component name="RunManager" selected="Application.ClientUploader">
     <configuration name="ClientUploader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.client.ClientUploader" />
       <module name="SkiResort" />
@@ -185,17 +191,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JavaClient" />
-        <item itemvalue="Application.JettyServer" />
         <item itemvalue="Application.ClientUploader" />
-        <item itemvalue="JUnit.All in SkiResort" />
+        <item itemvalue="Application.JettyServer" />
         <item itemvalue="JUnit.test in SkiResort (1)" />
+        <item itemvalue="JUnit.All in SkiResort" />
+        <item itemvalue="Application.JavaClient" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
         <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
       </set>
     </attachedChunks>
@@ -353,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710049475955</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="V 1.1.1&#10;Working Server">
+      <option name="closed" value="true" />
+      <created>1710052787270</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1710052787270</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -369,7 +384,8 @@
     <MESSAGE value="V 0.3.8&#10;Maven Dependencies Update server update error resolved" />
     <MESSAGE value="V 1.0.0" />
     <MESSAGE value="V 1.1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="V 1.1.0" />
+    <MESSAGE value="V 1.1.1&#10;Working Server" />
+    <option name="LAST_COMMIT_MESSAGE" value="V 1.1.1&#10;Working Server" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

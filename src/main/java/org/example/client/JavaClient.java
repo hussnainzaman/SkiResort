@@ -13,8 +13,8 @@ public class JavaClient {
     //public ExecutorService executor;
 
     public static void main(String[] args) {
-       String endpoint = "http://localhost:8080/dss/skiers/1/seasons/2022/days/7/skiers/1234";
-        // endpoint = "http://http://68.233.127.218:8080/dss/skiers/1/seasons/2022/days/7/skiers/1234";
+       //String endpoint = "http://localhost:8080/dss/skiers/1/seasons/2022/days/7/skiers/9999";
+        String endpoint = "http://68.233.127.218:8080/dss/skiers/1/seasons/2022/days/7/skiers/9999";
         // Create a thread pool and start multiple instances of the client
         int numClients = 32;
         ExecutorService executor = Executors.newFixedThreadPool(numClients);

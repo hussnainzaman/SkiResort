@@ -30,7 +30,7 @@ class MainServletTest {
     @Test
     void testDoPostWithValidInput() throws ServletException, IOException {
         // Mocking the request
-        when(request.getPathInfo()).thenReturn("/1/seasons/2022/days/1/skiers/1234");
+        when(request.getPathInfo()).thenReturn("/1/seasons/2022/days/1/skiers/9999");
 
         // Creating a dummy LiftRide object
         LiftRide liftRide = new LiftRide(5, 30);
@@ -53,7 +53,7 @@ class MainServletTest {
 
         // Verifying the response
         writer.flush();
-        String expectedResponse = "Event Created";
+        String expectedResponse = "Status OK! Event has been Created";
         String actualResponse = stringWriter.toString().trim();
         assert actualResponse.equals(expectedResponse) : "Response mismatch";
     }
@@ -61,7 +61,7 @@ class MainServletTest {
     @Test
     void testDoPostWithInvalidInput() throws ServletException, IOException {
         // Mocking the request
-        when(request.getPathInfo()).thenReturn("/1/seasons/2022/days/1/skiers/1234");
+        when(request.getPathInfo()).thenReturn("/1/seasons/2022/days/1/skiers/9999");
 
         // Creating an invalid JSON request
         String jsonRequest = "{\"liftID\":50,\"time\":400}";
